@@ -1,0 +1,773 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kusu Priyanka - Fullstack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="font-poppins bg-gradient-to-br from-gray-900 via-purple-900/20 to-black text-white overflow-x-hidden"
+  >
+    <!-- Navbar -->
+    <nav
+      id="navbar"
+      class="fixed w-full z-50 bg-black/80 backdrop-blur-md py-4 px-8 flex justify-between items-center shadow-2xl"
+    >
+      <div
+        class="text-2xl font-bold bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent"
+      >
+        Kusu Priyanka
+      </div>
+      <ul class="hidden md:flex space-x-10">
+        <li>
+          <a
+            href="#home"
+            class="nav-link hover:text-orange-400 transition-all duration-300 font-medium"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="#about"
+            class="nav-link hover:text-orange-400 transition-all duration-300 font-medium"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            href="#skills"
+            class="nav-link hover:text-orange-400 transition-all duration-300 font-medium"
+            >Skills</a
+          >
+        </li>
+        <li>
+          <a
+            href="#projects"
+            class="nav-link hover:text-orange-400 transition-all duration-300 font-medium"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a
+            href="#contact"
+            class="nav-link hover:text-orange-400 transition-all duration-300 font-medium"
+            >Contact</a
+          >
+        </li>
+      </ul>
+      <i
+        id="mobile-menu"
+        class="md:hidden fas fa-bars text-2xl cursor-pointer hover:text-orange-400"
+      ></i>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div
+      id="mobile-overlay"
+      class="fixed inset-0 bg-black/50 z-40 hidden md:hidden"
+    ></div>
+    <ul
+      id="mobile-nav"
+      class="fixed top-16 right-0 w-64 h-screen bg-black/95 backdrop-blur-md transform translate-x-full transition-transform duration-300 md:hidden z-50 p-8 space-y-6"
+    >
+      <li>
+        <a href="#home" class="block py-2 hover:text-orange-400 font-medium"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a href="#about" class="block py-2 hover:text-orange-400 font-medium"
+          >About</a
+        >
+      </li>
+      <li>
+        <a href="#skills" class="block py-2 hover:text-orange-400 font-medium"
+          >Skills</a
+        >
+      </li>
+      <li>
+        <a href="#projects" class="block py-2 hover:text-orange-400 font-medium"
+          >Projects</a
+        >
+      </li>
+      <li>
+        <a href="#contact" class="block py-2 hover:text-orange-400 font-medium"
+          >Contact</a
+        >
+      </li>
+    </ul>
+
+    <!-- Home Section -->
+    <section
+      id="home"
+      class="min-h-screen flex flex-col justify-center items-center pt-24 px-8 text-center relative overflow-hidden"
+    >
+      <div class="particles absolute inset-0 opacity-20"></div>
+      <h1
+        class="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent drop-shadow-2xl"
+      >
+        Hi, I'm <span class="text-orange-400">Kusu Priyanka</span>
+      </h1>
+
+      <!-- Typing Animation -->
+      <div class="typing-container mb-12">
+        <p
+          id="type1"
+          class="typing-text text-2xl md:text-3xl lg:text-4xl font-semibold text-orange-400 mb-4 opacity-0"
+        ></p>
+        <p
+          id="type2"
+          class="typing-text text-2xl md:text-3xl lg:text-4xl font-semibold text-cyan-400 mb-12 opacity-0"
+        ></p>
+      </div>
+
+      <!-- Profile Image - Replace with your girl image -->
+      <div class="profile-image-container">
+        <img
+          id="profile-img"
+          src="/assets/girlsworking.jpeg"
+          alt="Girl Developer"
+          class="w-72 md:w-96 lg:w-120 h-72 md:h-96 lg:h-120 rounded-3xl shadow-2xl border-4 border-orange-400/30 hover:scale-105 transition-all duration-500 hover:shadow-orange-500/25"
+        />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section
+      id="about"
+      class="py-32 px-8 bg-gradient-to-b from-transparent to-black/50"
+    >
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-20">
+          <h2
+            class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-orange-400 via-pink-400 to-purple-400 bg-clip-text text-transparent mb-4"
+          >
+            About Me
+          </h2>
+          <div
+            class="w-32 h-1 bg-gradient-to-r from-orange-400 to-purple-400 mx-auto rounded-full"
+          ></div>
+        </div>
+        <div class="flex flex-col lg:flex-row items-center gap-16">
+          <!-- About Image -->
+          <div class="lg:w-1/2 flex justify-center">
+            <div class="about-img relative">
+              <img
+                src="assets/portfolioimage.jpeg"
+                alt="Kusu Priyanka"
+                class="w-80 h-96 rounded-2xl shadow-2xl border-4 border-white/10 hover:border-orange-400/50 transition-all duration-500"
+              />
+            </div>
+          </div>
+          <!-- About Content -->
+          <div class="lg:w-1/2 space-y-6">
+            <p class="text-xl leading-relaxed text-gray-300">
+              Experienced Fullstack Developer with over 1000+ hours of coding.
+              Passionate about building scalable web applications using MERN
+              stack. Strong problem-solver with hands-on experience in cloning
+              complex websites like Myntra and building fullstack apps like
+              Notepad.
+            </p>
+            <p class="text-xl leading-relaxed text-gray-300">
+              Proficient in React, Node.js, Express, Supabase, Tailwind CSS, and
+              modern deployment platforms. Always learning and staying updated
+              with latest web technologies.
+            </p>
+            <a
+              href="assets/Kusu-Hari-Rama-Priyanka-FlowCV-Resume-20260215.pdf"
+              download
+              class="inline-flex items-center gap-3 bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white px-8 py-4 rounded-2xl font-semibold shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
+            >
+              <i class="fas fa-download"></i> Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section
+      id="skills"
+      class="py-32 px-8 bg-gradient-to-r from-gray-900/50 to-transparent"
+    >
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-20">
+          <h2
+            class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent mb-4"
+          >
+            Technical Skills
+          </h2>
+          <div
+            class="w-32 h-1 bg-gradient-to-r from-cyan-400 to-purple-400 mx-auto rounded-full"
+          ></div>
+        </div>
+        <div
+          class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 lg:gap-12 justify-items-center"
+        >
+          <div
+            class="skill-card p-6 rounded-2xl bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/20 hover:border-cyan-400/50 hover:scale-110 transition-all duration-500 group"
+          >
+            <i
+              class="fab fa-react text-4xl lg:text-5xl text-cyan-400 group-hover:text-cyan-300 mb-3 block"
+            ></i>
+            <span
+              class="text-sm font-medium text-gray-300 group-hover:text-white"
+              >React</span
+            >
+          </div>
+          <div
+            class="skill-card p-6 rounded-2xl bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/20 hover:border-yellow-400/50 hover:scale-110 transition-all duration-500 group"
+          >
+            <i
+              class="fab fa-js-square text-4xl lg:text-5xl text-yellow-400 group-hover:text-yellow-300 mb-3 block"
+            ></i>
+            <span
+              class="text-sm font-medium text-gray-300 group-hover:text-white"
+              >JavaScript</span
+            >
+          </div>
+          <div
+            class="skill-card p-6 rounded-2xl bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/20 hover:border-orange-400/50 hover:scale-110 transition-all duration-500 group"
+          >
+            <i
+              class="fab fa-html5 text-4xl lg:text-5xl text-orange-500 group-hover:text-orange-400 mb-3 block"
+            ></i>
+            <span
+              class="text-sm font-medium text-gray-300 group-hover:text-white"
+              >HTML</span
+            >
+          </div>
+          <div
+            class="skill-card p-6 rounded-2xl bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/20 hover:border-blue-400/50 hover:scale-110 transition-all duration-500 group"
+          >
+            <i
+              class="fab fa-css3-alt text-4xl lg:text-5xl text-blue-400 group-hover:text-blue-300 mb-3 block"
+            ></i>
+            <span
+              class="text-sm font-medium text-gray-300 group-hover:text-white"
+              >CSS</span
+            >
+          </div>
+          <div
+            class="skill-card p-6 rounded-2xl bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/20 hover:border-green-400/50 hover:scale-110 transition-all duration-500 group"
+          >
+            <i
+              class="fab fa-node-js text-4xl lg:text-5xl text-green-500 group-hover:text-green-400 mb-3 block"
+            ></i>
+            <span
+              class="text-sm font-medium text-gray-300 group-hover:text-white"
+              >Node.js</span
+            >
+          </div>
+          <div
+            class="skill-card p-6 rounded-2xl bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/20 hover:border-pink-400/50 hover:scale-110 transition-all duration-500 group"
+          >
+            <i
+              class="fas fa-server text-4xl lg:text-5xl text-pink-400 group-hover:text-pink-300 mb-3 block"
+            ></i>
+            <span
+              class="text-sm font-medium text-gray-300 group-hover:text-white"
+              >Express</span
+            >
+          </div>
+          <div
+            class="skill-card p-6 rounded-2xl bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/20 hover:border-purple-400/50 hover:scale-110 transition-all duration-500 group"
+          >
+            <i
+              class="fas fa-database text-4xl lg:text-5xl text-purple-500 group-hover:text-purple-400 mb-3 block"
+            ></i>
+            <span
+              class="text-sm font-medium text-gray-300 group-hover:text-white"
+              >Supabase</span
+            >
+          </div>
+          <div
+            class="skill-card p-6 rounded-2xl bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/20 hover:border-gray-400/50 hover:scale-110 transition-all duration-500 group"
+          >
+            <i
+              class="fab fa-github text-4xl lg:text-5xl text-gray-400 group-hover:text-gray-300 mb-3 block"
+            ></i>
+            <span
+              class="text-sm font-medium text-gray-300 group-hover:text-white"
+              >GitHub</span
+            >
+          </div>
+          <div
+            class="skill-card p-6 rounded-2xl bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/20 hover:border-blue-500/50 hover:scale-110 transition-all duration-500 group"
+          >
+            <i
+              class="fas fa-code text-4xl lg:text-5xl text-blue-500 group-hover:text-blue-400 mb-3 block"
+            ></i>
+            <span
+              class="text-sm font-medium text-gray-300 group-hover:text-white"
+              >VS Code</span
+            >
+          </div>
+          <div
+            class="skill-card p-6 rounded-2xl bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/20 hover:border-white/50 hover:scale-110 transition-all duration-500 group"
+          >
+            <i
+              class="fab fa-vercel text-4xl lg:text-5xl text-white group-hover:text-gray-200 mb-3 block"
+            ></i>
+            <span
+              class="text-sm font-medium text-gray-300 group-hover:text-white"
+              >Vercel</span
+            >
+          </div>
+          <div
+            class="skill-card p-6 rounded-2xl bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/20 hover:border-orange-500/50 hover:scale-110 transition-all duration-500 group"
+          >
+            <i
+              class="fas fa-paper-plane text-4xl lg:text-5xl text-orange-500 group-hover:text-orange-400 mb-3 block"
+            ></i>
+            <span
+              class="text-sm font-medium text-gray-300 group-hover:text-white"
+              >Postman</span
+            >
+          </div>
+          <div
+            class="skill-card p-6 rounded-2xl bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/20 hover:border-red-400/50 hover:scale-110 transition-all duration-500 group"
+          >
+            <i
+              class="fab fa-git-alt text-4xl lg:text-5xl text-red-400 group-hover:text-red-300 mb-3 block"
+            ></i>
+            <span
+              class="text-sm font-medium text-gray-300 group-hover:text-white"
+              >Git</span
+            >
+          </div>
+          <div
+            class="skill-card p-6 rounded-2xl bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/20 hover:border-cyan-500/50 hover:scale-110 transition-all duration-500 group"
+          >
+            <i
+              class="fab fa-tailwind text-4xl lg:text-5xl text-cyan-500 group-hover:text-cyan-400 mb-3 block"
+            ></i>
+            <span
+              class="text-sm font-medium text-gray-300 group-hover:text-white"
+              >Tailwind</span
+            >
+          </div>
+          <div
+            class="skill-card p-6 rounded-2xl bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/20 hover:border-gray-500/50 hover:scale-110 transition-all duration-500 group"
+          >
+            <i
+              class="fas fa-cloud text-4xl lg:text-5xl text-gray-500 group-hover:text-gray-400 mb-3 block"
+            ></i>
+            <span
+              class="text-sm font-medium text-gray-300 group-hover:text-white"
+              >Render</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section
+      id="projects"
+      class="py-32 px-8 bg-gradient-to-t from-black/70 to-transparent"
+    >
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-20">
+          <h2
+            class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-green-400 via-blue-400 to-emerald-400 bg-clip-text text-transparent mb-4"
+          >
+            Projects
+          </h2>
+          <div
+            class="w-32 h-1 bg-gradient-to-r from-green-400 to-emerald-400 mx-auto rounded-full"
+          ></div>
+        </div>
+
+        <!-- Project 1 -->
+        <div class="project-card mb-20 group">
+          <div
+            class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 hover:-translate-y-4 transition-all duration-700"
+          >
+            <div class="lg:w-1/2">
+              <img
+                src="foodieapp.png"
+                alt="food delivery app"
+                class="w-full rounded-3xl shadow-2xl group-hover:scale-105 transition-transform duration-500 border-4 border-white/10 group-hover:border-green-400/50"
+              />
+            </div>
+            <div class="lg:w-1/2 space-y-6">
+              <div>
+                <h3
+                  class="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent mb-2"
+                >
+                  Fijial Food Delivery App
+                </h3>
+                <p class="text-xl text-gray-300 leading-relaxed">
+                  Restaurant Ordering App is a full-stack web application that allows users to browse restaurants and food items, add products to a cart, place orders, and track their status in real-time. Admins can manage products and update order statuses. The app is fully responsive, working seamlessly on mobile, tablet, and desktop. 
+                </p>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-4 py-2 bg-green-500/20 text-green-300 rounded-full text-sm font-medium border border-green-500/30"
+                  >React</span
+                >
+                <span
+                  class="px-4 py-2 bg-emerald-500/20 text-emerald-300 rounded-full text-sm font-medium border border-emerald-500/30"
+                  >Node.js</span
+                >
+                <span
+                  class="px-4 py-2 bg-purple-500/20 text-purple-300 rounded-full text-sm font-medium border border-purple-500/30"
+                  >Supabase</span
+                >
+                <span
+                  class="px-4 py-2 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium border border-blue-500/30"
+                  >Tailwind</span
+                >
+              </div>
+              <div class="flex gap-4 pt-4">
+                <!-- UPDATE THESE LINKS WITH YOUR ACTUAL LINKS -->
+                <a
+                  href="
+                    https://fijial-frontend-restaurant.vercel.app"
+                  target="_blank"
+                  class="live-btn flex-1 bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white py-4 px-6 rounded-2xl font-semibold shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 text-center"
+                >
+                  <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                </a>
+                <a
+                  href="https://github.com/kusupriyanka04/fijial-frontend"
+                  target="_blank"
+                  class="github-btn flex-1 bg-gradient-to-r from-gray-700 to-gray-600 hover:from-gray-600 hover:to-gray-500 text-white py-4 px-6 rounded-2xl font-semibold shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 text-center"
+                >
+                  <i class="fab fa-github mr-2"></i>GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card mb-20 group">
+          <div
+            class="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-20 hover:-translate-y-4 transition-all duration-700"
+          >
+            <div class="lg:w-1/2">
+              <img
+                src="timetrackingapp.png"
+                alt="timetracking app"
+                class="w-full rounded-3xl shadow-2xl group-hover:scale-105 transition-transform duration-500 border-4 border-white/10 group-hover:border-emerald-400/50"
+              />
+            </div>
+            <div class="lg:w-1/2 space-y-6">
+              <div>
+                <h3
+                  class="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent mb-2"
+                >
+                  Time Tracking App
+                </h3>
+                <p class="text-xl text-gray-300 leading-relaxed">
+                  TimeTracker — 24-Hour Daily Activity & Productivity Logger
+                 TimeTracker is a modern web app that helps users track, analyze, and visualize their daily activities using a clean Material-inspired UI.
+                </p>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-4 py-2 bg-emerald-500/20 text-emerald-300 rounded-full text-sm font-medium border border-emerald-500/30"
+                  >HTML</span
+                >
+                <span
+                  class="px-4 py-2 bg-pink-500/20 text-pink-300 rounded-full text-sm font-medium border border-pink-500/30"
+                  >CSS</span
+                >
+                <span
+                  class="px-4 py-2 bg-yellow-500/20 text-yellow-300 rounded-full text-sm font-medium border border-yellow-500/30"
+                  >JavaScript</span
+                >
+              </div>
+              <div class="flex gap-4 pt-4">
+                <!-- UPDATE THESE LINKS WITH YOUR ACTUAL LINKS -->
+                <a
+                  href="https://time-tracking-apjt4917s-kusupriyanka04-1432s-projects.vercel.app"
+                  target="_blank"
+                  class="live-btn flex-1 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white py-4 px-6 rounded-2xl font-semibold shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 text-center"
+                >
+                  <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                </a>
+                <a
+                  href="https://github.com/kusupriyanka04/TimeTrackingApp"
+                  target="_blank"
+                  class="github-btn flex-1 bg-gradient-to-r from-gray-700 to-gray-600 hover:from-gray-600 hover:to-gray-500 text-white py-4 px-6 rounded-2xl font-semibold shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 text-center"
+                >
+                  <i class="fab fa-github mr-2"></i>GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-32 px-8 relative">
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-purple-900/30 to-pink-900/30"
+      ></div>
+      <div class="max-w-4xl mx-auto relative z-10">
+        <div class="text-center mb-20">
+          <h2
+            class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-orange-400 bg-clip-text text-transparent mb-4"
+          >
+            Contact Me
+          </h2>
+          <div
+            class="w-32 h-1 bg-gradient-to-r from-purple-400 to-orange-400 mx-auto rounded-full"
+          ></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+          <div
+            class="contact-item text-center p-8 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 hover:scale-105 transition-all duration-500 hover:border-purple-400/50"
+          >
+            <div
+              class="w-20 h-20 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-xl"
+            >
+              <i class="fas fa-phone text-2xl text-white"></i>
+            </div>
+            <h4 class="text-2xl font-bold mb-4 text-white">Phone</h4>
+            <a
+              href="tel:+919284958047"
+              class="text-xl font-semibold text-orange-400 hover:text-orange-300 transition"
+              >+91 8297119277</a
+            >
+          </div>
+          <div
+            class="contact-item text-center p-8 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 hover:scale-105 transition-all duration-500 hover:border-cyan-400/50"
+          >
+            <div
+              class="w-20 h-20 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-xl"
+            >
+              <i class="fas fa-map-marker-alt text-2xl text-white"></i>
+            </div>
+            <h4 class="text-2xl font-bold mb-4 text-white">Location</h4>
+            <p class="text-xl font-semibold text-white">
+              Hyderabad, Telangana, India
+            </p>
+          </div>
+          <div
+            class="contact-item text-center p-8 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 hover:scale-105 transition-all duration-500 hover:border-green-400/50"
+          >
+            <div
+              class="w-20 h-20 bg-gradient-to-r from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-xl"
+            >
+              <i class="fas fa-envelope text-2xl text-white"></i>
+            </div>
+            <h4 class="text-2xl font-bold mb-4 text-white">Email</h4>
+            <a
+              href="kusupriyanka04@gmail.com"
+              class="text-xl font-semibold text-emerald-400 hover:text-emerald-300 transition"
+              >kusupriyanka04@gmail.com</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black/90 py-12 border-t border-white/10">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="flex justify-center space-x-12 mb-8">
+          <a
+            href="tel:+91 8297119277"
+            class="social-icon w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center text-2xl hover:scale-125 hover:shadow-2xl transition-all duration-300 shadow-xl"
+          >
+            <i class="fas fa-phone"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/kusu-priyanka-103b06282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            class="social-icon w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center text-2xl hover:scale-125 hover:shadow-2xl transition-all duration-300 shadow-xl"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/kusupriyanka04"
+            target="_blank"
+            class="social-icon w-16 h-16 bg-gradient-to-r from-gray-700 to-gray-500 rounded-2xl flex items-center justify-center text-2xl hover:scale-125 hover:shadow-2xl transition-all duration-300 shadow-xl"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <p class="text-gray-400">
+          &copy; 2026 Kusu Priyanka. Built with ❤️ using HTML, CSS & JavaScript.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Smooth Scrolling & Navbar
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+          // Close mobile menu
+          document
+            .getElementById("mobile-nav")
+            .classList.add("translate-x-full");
+          document.getElementById("mobile-overlay").classList.add("hidden");
+        });
+      });
+
+      // Mobile Menu Toggle
+      document.getElementById("mobile-menu").addEventListener("click", () => {
+        document
+          .getElementById("mobile-nav")
+          .classList.toggle("translate-x-full");
+        document.getElementById("mobile-overlay").classList.toggle("hidden");
+      });
+
+      document
+        .getElementById("mobile-overlay")
+        .addEventListener("click", () => {
+          document
+            .getElementById("mobile-nav")
+            .classList.add("translate-x-full");
+          document.getElementById("mobile-overlay").classList.add("hidden");
+        });
+
+      // Navbar Background on Scroll
+      window.addEventListener("scroll", () => {
+        const navbar = document.getElementById("navbar");
+        if (window.scrollY > 100) {
+          navbar.classList.add("bg-black/95");
+        } else {
+          navbar.classList.remove("bg-black/95");
+        }
+      });
+
+      // Typing Animation
+      const texts = ["A Fullstack Developer", "MERN Stack Developer"];
+
+      let currentTextIndex = 0;
+      let charIndex = 0;
+      let isDeleting = false;
+
+      function typeWriter() {
+        const currentText = texts[currentTextIndex];
+        const typeElement = document.getElementById(
+          `type${currentTextIndex + 1}`,
+        );
+
+        if (!isDeleting && charIndex <= currentText.length) {
+          typeElement.textContent = currentText.slice(0, charIndex);
+          typeElement.style.borderRight = "0.15em solid #f97316";
+          charIndex++;
+          setTimeout(typeWriter, 100);
+        } else if (isDeleting && charIndex >= 0) {
+          typeElement.textContent = currentText.slice(0, charIndex);
+          charIndex--;
+          setTimeout(typeWriter, 50);
+        } else {
+          if (!isDeleting) {
+            isDeleting = true;
+            typeElement.style.opacity = "1";
+            setTimeout(typeWriter, 1000);
+          } else {
+            isDeleting = false;
+            currentTextIndex = (currentTextIndex + 1) % texts.length;
+            charIndex = 0;
+            setTimeout(typeWriter, 500);
+          }
+        }
+      }
+
+      // Start typing after page load
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          document.getElementById("type1").style.opacity = "1";
+          typeWriter();
+        }, 1000);
+      });
+
+      // Intersection Observer for Animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, observerOptions);
+
+      // Observe project cards and skill cards
+      document.querySelectorAll(".project-card, .skill-card").forEach((el) => {
+        el.style.opacity = "0";
+        el.style.transform = "translateY(50px)";
+        el.style.transition = "all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)";
+        observer.observe(el);
+      });
+
+      // Particles Background
+      function createParticles() {
+        const particles = document.querySelector(".particles");
+        for (let i = 0; i < 50; i++) {
+          const particle = document.createElement("div");
+          particle.style.position = "absolute";
+          particle.style.width = "2px";
+          particle.style.height = "2px";
+          particle.style.background = "rgba(255, 165, 0, 0.6)";
+          particle.style.borderRadius = "50%";
+          particle.style.left = Math.random() * 100 + "%";
+          particle.style.top = Math.random() * 100 + "%";
+          particle.style.animation = `float ${2 + Math.random() * 3}s infinite linear`;
+          particle.style.animationDelay = Math.random() * 2 + "s";
+          particles.appendChild(particle);
+        }
+      }
+
+      // Add CSS for particles and float animation
+      const style = document.createElement("style");
+      style.textContent = `
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+        .profile-image-container {
+            position: relative;
+        }
+        .profile-image-container::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(circle, rgba(251,146,60,0.3) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: pulse 3s infinite;
+            z-index: -1;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: translateX(-50%) scale(1); opacity: 1; }
+            50% { transform: translateX(-50%) scale(1.2); opacity: 0.5; }
+        }
+    `;
+      document.head.appendChild(style);
+
+      createParticles();
+    </script>
+  </body>
+</html>
